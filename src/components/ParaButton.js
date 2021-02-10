@@ -3,8 +3,19 @@ import Button from '@material-ui/core/Button';
 
 class ParaButton extends Component{
     render(){
+        const variant = this.props.variant;
+        const btnVariant = '';
+        if(variant){
+            btnVariant = this.props.variant;
+        }
+
+        const color = this.props.color;
+        const btnColor = '';
+        if(color){
+            const btnColor = this.props.color;
+        }
         return(
-            <Button variant={this.props.variant} color={this.props.color} onClick={this.props.event}>{this.props.children}</Button>
+            <Button variant={btnVariant} color={btnColor} onClick={this.props.loader}>{this.props.children}</Button>
         );
     }
 }

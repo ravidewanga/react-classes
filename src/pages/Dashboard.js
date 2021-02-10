@@ -28,7 +28,7 @@ class Dashboard extends Component {
                         //justify="center"
                         style={{ paddingTop: '50vh'}}
                     >
-                        <ParaButton event={this.loader} variant="contained" color="primary">Click Me!</ParaButton>
+                        <ParaButton loader={this.loader} variant="contained" color="primary">Click Me!</ParaButton>
                         {
                             this.state.showLoader ? <CircularProgress />
                                 : null
